@@ -1,3 +1,4 @@
+/* header */
 .header {
     display: flex;
     align-items: center;
@@ -7,21 +8,22 @@
     border-radius: 10px;
 }
 
-.header a + a::before {
-    content: "|";
-    margin: 0 10px;
-    color: black;
-}
-
-.header a {
+/* header links (except the linked image) */
+.header a:not(.image-link) {
     text-decoration: none;
     color: #313638;
     font-family: Verdana;
     font-size: 20px;
+    margin: 0 10px;
 }
 
-.profile-icon {
+/* style for the image link */
+.image-link {
     margin-left: auto;
+}
+
+/* style for the profile icon */
+.profile-icon {
     width: 50px;
     height: auto;
 }
