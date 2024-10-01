@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    padding: 15px;
+    background-color: #8693ab;
+    border-radius: 10px;
+}
+
+.header a + a::before {
+    content: "|";
+    margin: 0 10px;
+    color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: #313638;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+.profile-icon {
+    margin-left: auto;
+    width: 50px;
+    height: auto;
+}
