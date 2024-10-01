@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-page</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="login.html" class="image-link"><img src="images/profile_icon.jpeg" alt="profile_icon" class="profile-icon"></a>
+    </div>
+    <div class="login-container">
+        <h1>Welcome to PostIt<h1>
+        <a href="login.html">Create an account</a>
+        <p>or</p>
+        <p>Please log in</p>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Log in</button>
+        </form>
+        <a href="login.html">Forget password</a>
+        <p id="error-message" class="error-message"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
