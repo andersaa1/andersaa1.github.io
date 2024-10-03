@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add post</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="login.html" class="image-link"><img src="images/profile_icon.jpeg" alt="profile_icon" class="profile-icon"></a>
+    </div>
+    <div class="post-container">
+        <form>
+            <div class="post-group">
+                <label for="textArea">Post<br />body</label>
+                <textarea id="textArea" rows="5" cols="16" placeholder="textarea" required></textarea>
+            </div>
+            <div class="post-group">
+                <label for="file">Select<br />file</label>
+                <input type="file" id="selectFile" name="file" hidden accept="image/*" required>
+                <label for="selectFile" class="file-upload">Choose File</label>
+            </div>
+            <a href="index.html">
+                <button class="create-post" type="button">Create post</button>
+            </a>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
