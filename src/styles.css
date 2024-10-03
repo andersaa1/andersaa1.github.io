@@ -1,4 +1,4 @@
-.header {
+header {
     display: flex;
     align-items: center;
     margin: 1%;
@@ -9,12 +9,17 @@
 }
 
 /* header links (except the linked image) */
-.header a:not(.image-link) {
+header a:not(.image-link) {
     text-decoration: none;
     color: #313638;
     font-family: Verdana;
     font-size: 20px;
     margin: 0 10px;
+}
+
+header a:hover:not(.image-link){
+    color: aquamarine;
+    background-color: rebeccapurple;
 }
 
 /* style for the image link */
@@ -74,78 +79,93 @@ button {
     border: none;
 }
 
-.post-container {
+label {
+display: block;
+text-align: right;
+width: 40%;
+margin-bottom: 5px;
+margin-right: 18px;
+margin-left: 16px;
+}
+
+/* manual adjustment for the "Select file" label*/
+label[for="file"] {
+margin-right: 3px;
+margin-left: 32px;
+}
+
+textarea {
+font-size: 20px;
+width: 100%;
+padding: 6px;
+border: 1px solid #ccc;
+resize: none;
+}
+
+input[type="file"] {
+display: none;
+margin-top: 5px;
+}
+
+/* label class for file input*/
+.file-upload {
+display: inline-block;
+padding: 8px 16px;
+cursor: pointer;
+background-color: #7F7F7F;
+color: white;
+border: 1px solid black;
+text-align: center;
+font-size: 20px;
+width: 100%;
+}
+
+
+.create-post {
+background-color: #0e4d8b;
+color: white;
+border: none;
+padding: 10px 20px;
+margin-top: 32px;
+margin-left: 82px;
+font-size: 20px;
+cursor: pointer;
+width: 50%;
+}
+
+
+#login-form {
     display: flex;
-    border-radius: 10px;
-    position: absolute;
-    top: calc(60px + 50% - 30px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: verdana;
     flex-direction: column;
-    background-color: #cdcdcd;
-    padding: 20px;
-    border-radius: 10px;
-    width: 320px;
-  }
-  
-  /* style for groups with labels*/
-  .post-group {
-    display: flex;
-    align-items: flex-start;
-    font-size: 20px;
-    margin-bottom: 18px;
-  }
-  
-  label {
-    display: block;
-    text-align: right;
-    width: 40%;
-    margin-bottom: 5px;
-    margin-right: 18px;
-    margin-left: 16px;
-  }
+    width: 300px;
+    margin: 0 auto;
+}
 
-  /* manual adjustment for the "Select file" label*/
-  label[for="file"] {
-    margin-right: 3px;
-    margin-left: 32px;
-  }
-  
-  textarea {
-    font-size: 20px;
-    width: 100%;
-    padding: 6px;
-    border: 1px solid #ccc;
-    resize: none;
-  }
-  
-  input[type="file"] {
-    display: none;
-    margin-top: 5px;
-  }
+#login-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
 
-  /* label class for file input*/
-  .file-upload {
-    display: inline-block;
-    padding: 8px 16px;
-    cursor: pointer;
-    background-color: #7F7F7F;
-    color: white;
-    border: 1px solid black; 
-    text-align: center;
-    font-size: 20px;
-    width: 100%;
-  }
-  
-  .create-post {
-    background-color: #0e4d8b;
+#login-form input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border: 1px solid #00ff2c;
+}
+
+#login-form button {
+    padding: 10px;
+    background-color: #007BFF;
     color: white;
     border: none;
-    padding: 10px 20px;
-    margin-top: 32px;
-    margin-left: 82px;
-    font-size: 20px;
+    border-radius: 5px;
     cursor: pointer;
-    width: 50%;
-  }
+}
+
+#login-form > button:hover {
+    background-color: #6582a1;
+}
+
+#login-form + a {
+    color: darkred;
+}
