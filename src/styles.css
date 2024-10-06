@@ -117,7 +117,7 @@ color: white;
 border: 1px solid black;
 text-align: center;
 font-size: 20px;
-width: 100%;
+width: 50%;
 }
 
 
@@ -169,3 +169,21 @@ width: 50%;
 #login-form + a {
     color: darkred;
 }
+
+.addPost-container {
+    display: flex;
+    border-radius: 10px;
+    font-family: verdana, serif;
+    flex-direction: column;
+    background-color: #cdcdcd;
+    padding: 20px;
+    width: 600px;
+    margin: 20px auto;
+    position: relative;
+    text-align: left;
+}
+
+.post-group label {
+    text-align: left;
+}
+
