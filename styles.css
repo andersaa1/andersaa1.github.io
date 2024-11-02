@@ -38,7 +38,7 @@ header a:hover:not(.image-link){
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 40%;
     background-color: #cdcdcd;
     padding: 20px;
     border-radius: 10px;
@@ -46,7 +46,7 @@ header a:hover:not(.image-link){
     top: calc(60px + 50% - 30px);
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: verdana;
+    font-family: verdana, serif;
     font-size: 10px;
 }
 
@@ -137,7 +137,7 @@ width: 50%;
 #login-form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -177,7 +177,7 @@ width: 50%;
     flex-direction: column;
     background-color: #cdcdcd;
     padding: 20px;
-    width: 600px;
+    width: 60%;
     margin: 20px auto;
     position: relative;
     text-align: left;
