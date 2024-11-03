@@ -60,6 +60,13 @@ header a:hover:not(.image-link){
     font-family: Verdana;
 }
 
+/* no background and text color change on dropdown menu text */
+.dropdown-menu a:hover {
+    color: #313638;
+    background-color: transparent;
+}
+
+
 .login-container {
     display: flex;
     flex-direction: column;
