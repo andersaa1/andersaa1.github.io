@@ -42,5 +42,9 @@ body {
 }
 
 #home-button {
-    color: chartreuse;
+    color: #313638;
+}
+
+#home-button:hover {
+    color: aquamarine;
 }
