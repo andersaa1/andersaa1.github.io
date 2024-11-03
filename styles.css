@@ -22,15 +22,42 @@ header a:hover:not(.image-link){
     background-color: rebeccapurple;
 }
 
-/* style for the image link */
-.image-link {
-    margin-left: auto;
-}
-
 /* style for the profile icon */
 .profile-icon {
     width: 50px;
     height: auto;
+}
+
+/* style for the header image  */
+.header-profile {
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+}
+
+/* dropdown menu position  */
+.dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+/* dropdown menu style  */
+.dropdown-menu {
+    display: none; 
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 1000; /* dropdown menu on top of other elements*/
+    border-radius: 5px;
+}
+
+/* dropdown menu text  */
+.dropdown-menu a {
+    color: #313638;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana;
 }
 
 .login-container {
@@ -186,4 +213,3 @@ width: 50%;
 .post-group label {
     text-align: left;
 }
-

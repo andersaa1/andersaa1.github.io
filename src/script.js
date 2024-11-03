@@ -61,6 +61,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const postsContainer = document.getElementById('posts-container');
 
+    const profileIcon = document.getElementById("header-profile");
+    const dropdownMenu = document.getElementById("dropdown-menu");
+
+    // logic for dropdown menu
+    profileIcon.addEventListener("click", (event) => {
+        if (dropdownMenu.style.display === "block") {
+            dropdownMenu.style.display = "none"; // hides the dropdown menu
+        } else {
+            dropdownMenu.style.display = "block"; // shows the dropwdown menu
+        }
+    });
+
     fetch('src/data.json')
         .then(response => response.json())
         .then(data => {
